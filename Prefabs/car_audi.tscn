@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyt76c3bbcm7"]
+
+[ext_resource type="PackedScene" uid="uid://blrbvc3a1ocbb" path="res://Assets/Audi R8/Audi.tscn" id="1_yjol6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fyn70"]
+size = Vector3(3.33573, 1.83409, 7.71728)
+
+[node name="Car-Audi" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.999975, 0, -0.00712088, 0, 1, 0, 0.00712088, 0, 0.999975, -0.0403143, 1.14425, -0.465433)
+shape = SubResource("BoxShape3D_fyn70")
+
+[node name="Audi R8" parent="." instance=ExtResource("1_yjol6")]

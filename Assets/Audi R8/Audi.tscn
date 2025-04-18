@@ -1,0 +1,56 @@
+[gd_scene load_steps=13 format=3 uid="uid://blrbvc3a1ocbb"]
+
+[ext_resource type="PackedScene" uid="uid://de02bivyckgy6" path="res://Assets/Audi R8/Audi R8.blend" id="1_3bab5"]
+[ext_resource type="Texture2D" uid="uid://dgumrddxhded" path="res://Assets/Audi R8/Textures/Audi R8-black.jpg" id="2_mk6du"]
+[ext_resource type="Texture2D" uid="uid://dyct200ymcc8n" path="res://Assets/Audi R8/Textures/Back Headlight.jpg" id="3_1xv15"]
+[ext_resource type="Texture2D" uid="uid://b1iwfrmnb3t3y" path="res://Assets/Audi R8/Textures/Tire.tga" id="4_00ns2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ksvif"]
+albedo_texture = ExtResource("2_mk6du")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1pe0a"]
+albedo_texture = ExtResource("2_mk6du")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6gjho"]
+albedo_texture = ExtResource("2_mk6du")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cbir"]
+albedo_texture = ExtResource("3_1xv15")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fco2h"]
+albedo_texture = ExtResource("2_mk6du")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqcay"]
+albedo_texture = ExtResource("2_mk6du")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfbb0"]
+albedo_texture = ExtResource("4_00ns2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wsi0e"]
+albedo_texture = ExtResource("2_mk6du")
+
+[node name="Audi R8" instance=ExtResource("1_3bab5")]
+
+[node name="arka cam" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_ksvif")
+
+[node name="Cylinder" parent="." index="4"]
+material_override = SubResource("StandardMaterial3D_1pe0a")
+
+[node name="egzos" parent="." index="5"]
+material_override = SubResource("StandardMaterial3D_6gjho")
+
+[node name="Plane_007" parent="." index="10"]
+material_override = SubResource("StandardMaterial3D_0cbir")
+
+[node name="Plane_010" parent="." index="13"]
+material_override = SubResource("StandardMaterial3D_fco2h")
+
+[node name="Plane" parent="." index="19"]
+material_override = SubResource("StandardMaterial3D_vqcay")
+
+[node name="teker_001" parent="." index="20"]
+material_override = SubResource("StandardMaterial3D_yfbb0")
+
+[node name="tel" parent="." index="21"]
+material_override = SubResource("StandardMaterial3D_wsi0e")
